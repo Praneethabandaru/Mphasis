@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./HTML5/style.css">
+</head>
+<body>
+    <p>register page!!</p>
+    <article>
+ <fieldset>
+    <legend>Employee Registration page</legend>
+     <form>
+        <label>EmployeeID</label><br>
+        <input type="text" required tabindex="1" placeholder="enter empid"  oninvalid="this.setCustomValidity('pls enter empid')"> <br>
+
+        <label>enter empname</label><br>
+        <input type="text" pattern="[a-zA-Z]+" tabindex="3"/><br>
+
+        <label>select dob</label><br>
+        <input type="date" tabindex="2"><br>
+
+        <label>enter email</label><br>
+        <input type="email" accesskey="e"><br>
+
+        <label>enter site url</label><br>
+        <input type="url"><br>
+
+        <label>enter project id</label><br>
+        <input type="number" min="1" max="10" step="2"><br>
+
+        <label>project start month</label><br>
+        <input type="month"><br>
+
+        <label>project start week</label><br>
+        <input type="week"><br>
+
+        <label>project completion status</label><br>
+        <input type="range" min="1" max="100" value="60"><br>
+
+        <label >meeting time</label><br>
+        <input type="time"><br>
+
+        <label>empDresscode</label><br>
+        <input type="color"><br>
+
+        <input type="url" list="mylist" name="link">
+
+        <datalist id="mylist">
+        <option label="india" value="india is selected">
+        <option label="canada" value="canada is selected">
+        <option label="uk" value="uk is selected">
+        </datalist>
+        
+        <input type="submit" value="register">
+
+        <input type="submit" value="home" formnovalidate="true" formaction="./HTML5/intro.html">
+
+       </form>
+    </fieldset>
+   </article>
+</body>
+</html>
