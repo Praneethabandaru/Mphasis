@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rectfunc(){
+             var c = document.getElementById("c1");
+             var can1 = c.getContext("2d"); // type of drawng to be performed 2d or 3d 
+                can1.strokeStyle="blue";
+                can1.strokeRect(80,140,300,400); 
+        }
+        function strockfunc()
+        {
+            var c=document.getElementById("c1");
+            var can1=c.getContext("2d");
+            can1.lineWidth=10
+            can1.strokeStyle="blue";
+            can1.strokeRect(80,140,300,400);
+        }
+
+            function creatText()
+            {
+                var c = document.getElementById("c1");
+                
+                var can1 = c.getContext("2d"); 
+
+                can1.font = "italic 50px sans-serif";
+
+                can1.fillStyle="red";
+                can1.fillText("HTML5 Rocks!!",160,100);
+
+            }
+
+            function creatStrokeText()
+            {
+
+                var c = document.getElementById("c1");
+                
+                var can1 = c.getContext("2d"); 
+
+                can1.font = "italic 50px sans-serif";
+
+
+                can1.strokeText("HTML5 Rocks!!",160,100);
+
+
+            }
+
+            function creatLine()
+            {
+
+                var c = document.getElementById("c1");
+                
+                var can1 = c.getContext("2d"); 
+                can1.strokeStyle="red";
+                can1.lineWidth =10
+                can1.moveTo(0,0);  // x and y cor
+                can1.lineTo(200,400);  // space  and length
+                can1.stroke(); // action will be performed
+            }
+
+
+            function ClearRectangle()
+            {
+
+                var c = document.getElementById("c1");
+                
+                var can1 = c.getContext("2d"); // type of drawng to be performed 2d or 3d 
+                
+                can1.fillStyle="green";
+                can1.clearRect(20,20,300,400); // left top  width height
+                // cicle, triangle , path , rectangle
+            }
+    </script>
+    <p>My contact</p>
+    <article>
+        <canvas id="c1" height="500px" width="900px" style="border: 3px solid blue;"></canvas>
+        <input type="button" value="fillrectangle" onclick="rectfunc()">
+        <input type="button" value="strockrectangle" onclick="strockfunc()">
+        <input type="button" value="creatStrokeText" onclick="creatStrokeText()">
+        <input type="button" value="creatLine" onclick="creatLine()">
+        <input type="button" value="ClearRectangle" onclick="ClearRectangle()">
+        <input type="button" value="creatText" onclick="creatText()">
+        
+
+    </article>
+</body>
+</html>

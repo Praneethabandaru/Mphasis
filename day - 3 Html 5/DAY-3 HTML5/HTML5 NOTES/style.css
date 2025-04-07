@@ -1,0 +1,56 @@
+body
+{
+background-image:url('https://i.pinimg.com/736x/b2/db/91/b2db91c8afafdbd6ea5e70df6ceecc91.jpg');
+background-size: cover; 
+background-attachment:fixed;
+}
+
+nav
+{
+height:170px;
+margin-left:100px;
+margin-right:100px;
+margin-top:100px;
+background-image:url('https://tse4.mm.bing.net/th/id/OIP.jVaXMteK2tFz43i2VyCcdwAAAA?rs=1&pid=ImgDetMain');
+background-size: cover;
+word-spacing:20px;
+}
+article
+{
+height:800px;
+background:white;
+margin-left:100px;
+margin-right:100px;
+}
+footer
+{
+margin-left:100px;
+margin-right:100px;
+height:100px;
+background:grey;
+}
+a:link {text-decoration:none;}
+a:hover {border-style:dashed;color:orange;}
+
+a
+{
+text-shadow: 2px 2px 0px red;
+border-radius:100px 100px 0 0;
+border-width:10px 50px 10px 50px;
+border-style:dashed ridge dashed groove;
+border-color:blue;
+font-size:24px;
+background:blue;
+color:white;
+}
+
+fieldset 
+{
+    width: 200px;
+    background: steelblue;
+    margin-left: 80px;
+}
+input{
+    border-radius: 100px;
+    border: 3px solid hotpink;
+}

@@ -1,0 +1,40 @@
+#firstbox{
+    border: 2px solid orangered;
+    padding-left: 30px;
+    width: 500px;
+    bottom: 500px;
+    margin-bottom: 20px;
+}
+#secondbox{
+    border: 2px solid orangered;
+    padding-left: 30px;
+    width: 500px;
+    /* height: 200px; */
+}
+#text1{
+    padding-left: 350px;
+}
+#text2{
+    padding-left: 350px;
+}
+aside{
+    padding: 20px;
+    width: 200px;
+   position: absolute;
+   top: 130px;
+   right: 700px; 
+}
+footer{
+    width: 100vh;
+    background-color: green;
+}
+#copyright
+{
+    position: absolute;
+    left: 500px;
+}
+div{
+    height: 30px;
+    background-color: green;
+    width: 100vw;
+}

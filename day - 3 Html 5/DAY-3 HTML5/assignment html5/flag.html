@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function rectfunc()
+        {
+            var c=document.getElementById("c1");
+            var can1=c.getContext("2d");
+            can1.fillStyle="lightblue";
+            can1.fillRect(100,250,500,300);
+            can1.fillStyle="#FEcc00";
+            can1.fillRect(250,250,60,300);
+            can1.fillRect(100,350,500,90);
+        }
+    </script>
+    <article>
+        <canvas id="c1" height="800px" width="900px" style="border: 3px solid rgb(0,183, 255);"></canvas>
+        <input type="button" value="fillrectangle" onclick="rectfunc()">
+    </article>
+</body>
+</html>
