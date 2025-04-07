@@ -1,0 +1,57 @@
+body{
+    /* margin: 10px; */
+    position: absolute;
+    top: 60px;
+    left: 400px;
+    justify-items: center;
+    align-items:center ;
+    height: 50px;
+    width: 700px;
+}
+div{
+    width: 150px;
+    height: 30px;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: auto;
+}
+#one{
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to bottom right,yellow,red);
+    position: absolute;
+    left: 1px;
+    top:100px;
+    
+}
+#two{
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle,blue,red);
+    position: absolute;
+    left: 300px;
+    top: 100px;
+}
+#three{
+    width: 200px;
+    height: 200px;
+    background: conic-gradient(blue 0deg,cyan 45deg,green 90deg,yellow 135deg,orange 180deg,red 225deg,purple 270deg,red 315deg,blue 360deg);
+    position: absolute;
+    left: 600px;
+    top: 100px;
+    border: 2px solid black;
+}
+img{
+    height: 300px;
+    width: 400px;
+    position: absolute;
+    top: 370px;
+    left: 30px;
+}
+#pink{
+    height:300px ;
+    width: 400px;
+    position: absolute;
+    top: 370px;
+    left: 430px;
+}

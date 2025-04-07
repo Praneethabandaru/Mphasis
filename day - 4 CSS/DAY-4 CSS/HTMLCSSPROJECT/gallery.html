@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Zoom and Scale</title>
+    <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            margin-top:10%;
+    
+        }
+        .image {
+            transition: transform 0.2s; 
+        }
+        .image:hover {
+            transform: scale(1.5) rotate(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.YFs5JBMfW-jaKRqUwBmQKwHaD4?w=337&h=180&c=7&r=0&o=5&pid=1.7" alt="Zoomable Image" class="image">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.a8W8RnVI5tH_r-VxKGcb7QHaD4?w=339&h=180&c=7&r=0&o=5&pid=1.7" alt="Zoomable Image" class="image">
+        <img src="https://tse1.mm.bing.net/th/id/OIP.3co9jYMN0J06GljfOHDXLAHaD4?w=310&h=180&c=7&r=0&o=5&pid=1.7" alt="Zoomable Image" class="image">
+    </div>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* #email{
+    height: 25px;
+    width: 25px;
+    position: absolute;
+    top: 326px;
+    left: 40px;
+} */
+body {
+    background-color: #333;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.enter{
+    background-color: grey;
+    width:500px;
+    height:500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.login-container {
+    background-color: palevioletred;
+    padding: 30px;
+    width: 320px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: white;
+}
+
+
+.profile-icon img {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 25px;
+    padding: 8px;
+    margin: 15px 0;
+}
+
+.input-group .icon img {
+    width: 20px;
+    margin: 0 10px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+}
+
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.links a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+
+button {
+    background-color: #B00000;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #900000;
+}
+   
