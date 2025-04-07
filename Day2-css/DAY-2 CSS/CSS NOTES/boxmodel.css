@@ -1,0 +1,48 @@
+div{
+    /* margin-left:  300px;
+    margin-top: 300px; */
+    margin: 30px;
+    /* margin: 10px 110px 50px 40px; */
+    border-width: 2px;
+    border-color: greenyellow;
+    /* border-style:dashed; */
+    /* border-radius: 10px; */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    width: 500px;
+    
+    border: 10px groove red;
+    /* padding-left: 50px; */
+    /* padding: 360px; */
+    /* transition: transform 5s; */
+    box-shadow: rgb(0,0,255) 8px 8px;
+    /* animation: myfirst 5s; */
+    animation: movement 5s linear infinite;
+    position: absolute;
+    animation-direction: alternate;
+}
+
+
+/* @-webkit-keyframes myfirst
+{
+    from {background: red; border: 3px dotted green}
+    to {background: orange; border: 3px solid black;}
+} */
+/* @-webkit-keyframes myfirst
+{
+    0% {}
+    25% {}
+    50%{background: yellow;}
+    75%{}
+    100%{}
+} */
+@-webkit-keyframes movement
+{
+    0% {background: red;left: 0px;  top: 0px;}
+    25% {background: black;left: 500px; top: 0px;}
+    50%{background: blue;left: 500px; top: 500px;}
+    75%{background: green;left: 0px; top: 500px;}
+    100%{background: greenyellow;left: 0px; top: 500px;}
+}

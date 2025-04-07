@@ -1,0 +1,12 @@
+body{
+    background-image: url(https://tse2.mm.bing.net/th/id/OIP.qDq9CyqtVHcrVfhyaINP0AHaGx?rs=1&pid=ImgDetMain);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+div{
+    font: italic bold 30px sans-serif ,times;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
