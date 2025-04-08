@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-YUe2LzesAfftltw+PEaao2tjU/QATaW/rOitAq67e0CT0Zi2VVRL0oC4+gAaeBKu" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar bg-primary">
+        <div class="d-flex align-items-center">
+            <a href="#" class="nav-link text-white">StudentSys</a> 
+            <button class="btn btn-warning">new</button>
+        </div>
+       <ul class="nav">
+         <a href="#" class="nav-link text-white">Dashboard</a>
+         <button class="btn btn-white text-dark bg-white">4</button>
+       </ul>
+    </nav>
+    <nav>
+        <ul class="nav nav-pills justify-content-center m-3">
+            <li class="nav-item">
+                <a class="nav-link" href="studentlist.html" >Studentlist</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="addstudent.html">Add Student</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="report.html" >Reports</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="settings.html" >Settings</a>
+            </li>
+        </ul>
+    </nav>
+    <article>
+        <form>
+            <div class="container mt-5">
+                <div class="card border-success">
+                  <div class="card-header bg-success text-white fw-bold">Add New Student</div>
+                  <div class="card-body">
+                    <form>
+                      <div class="row mb-3">
+                        <div class="col-md-6">
+                          <label for="fullName" class="form-label">Full Name</label>
+                          <input type="text" class="form-control" id="fullName" placeholder="Enter full name">
+                        </div>
+                        <div class="col-md-6">
+                          <label for="email" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="Enter email">
+                        </div>
+                      </div>
+            
+                      <div class="row mb-3">
+                        <div class="col-md-4">
+                          <label for="classSelect" class="form-label">Class</label>
+                          <select class="form-select" id="classSelect">
+                            <option>Select class</option>
+                            <option>Class 1</option>
+                            <option>Class 2</option>
+                          </select>
+                        </div>
+                        <div class="col-md-4">
+                          <label for="age" class="form-label">Age</label>
+                          <input type="number" class="form-control" id="age" placeholder="Enter age">
+                        </div>
+                        <div class="col-md-4">
+                          <label for="profilePic" class="form-label">Profile Picture URL</label>
+                          <input type="url" class="form-control" id="profilePic" placeholder="https://...">
+                        </div>
+                      </div>
+            
+                      <button type="submit" class="btn btn-success">Add Student</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+        </form>
+    </article>
