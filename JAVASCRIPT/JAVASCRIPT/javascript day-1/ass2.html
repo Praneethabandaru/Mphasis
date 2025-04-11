@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    <script>
+        function demo12()
+{// create hide works?
+
+    var a = document.getElementById("zoom1");
+    a.hidden=true;
+   
+}
+function demo14()
+{
+    var a = document.getElementById("zoom2");
+    a.hidden=true;
+}
+
+function demo13()
+{// create hide works?
+    var a = document.getElementById("zoom1");  
+    a.hidden=false ;
+}
+function demo15()
+{
+    var a = document.getElementById("zoom2");
+    a.hidden=false ;
+}
+
+    </script>
+    <table border="4"  id="zoom">
+        <tr>
+            <th> Employee photo</th>
+            <th> Employee name</th>
+        </tr>
+        <tr>
+            <td> <img id="zoom1" src="https://tse4.mm.bing.net/th/id/OIP.5wnbgWR9Ug3QzIJB-FS3gQHaHa?w=203&h=203&c=7&r=0&o=5&pid=1.7"></td>
+            <td> ajay</td>
+        </tr>
+        <tr>
+            <td> <img  id="zoom2"src="https://tse2.mm.bing.net/th/id/OIP.YasLPGBD_glp_Gx7PJbY0wHaHa?w=203&h=203&c=7&r=0&o=5&pid=1.7">
+            </td>
+            <td > raj</td>
+        </tr>
+    </table>
+    <input type="button" id="btn12" value="hide" onclick="demo12(),demo14()"/>
+<input type="button" id="btn13" value="show" onclick="demo13(),demo15()"/>
+</body>
+</html>
