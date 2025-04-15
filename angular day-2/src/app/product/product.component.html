@@ -1,0 +1,43 @@
+<p>product works!</p>
+<div *ngFor="let item of arr">
+    {{item}}
+</div>
+<style>
+    .e{
+        background-color: black;
+        color: wheat;
+    }
+    .o
+    {
+        background-color: steelblue;
+        color: beige;
+    }
+</style>
+<!-- <div *ngFor="let item of prod;let i = even;let j=odd" [class.e]="i" [class.o]="j">
+     {{i}}
+     {{item.pid}}
+     {{item.pname}}
+     {{item.price}}
+     {{item.description}}
+     <img src="{{item.pimage}}"/>
+</div> -->
+
+<div class="row">
+    <div class="col-md-4" *ngFor = "let i of prod">
+        <div><img src="{{i.pimage}}"></div>
+        <div>{{i.pid}}</div>
+        <div>{{i.pname}}</div>
+        <div>{{i.price}}</div>
+        <div>{{i.description}}</div>
+        <div><a routerLink="/buy" class="btn btn-info">Buy now</a></div>       
+    </div>
+</div>
+<ul *ngFor="let item of arr">
+    <li>{{item}}</li>
+</ul>
+
+<table>
+    <tr *ngFor="let item of arr;let i = index">
+        <td>{{item}}</td>
+    </tr>
+</table>

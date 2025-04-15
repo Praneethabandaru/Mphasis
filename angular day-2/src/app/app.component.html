@@ -1,0 +1,16 @@
+<!-- router outlet acts as a placeholder to display the component based on the current url--> 
+ <!-- localhost:4200/home -->
+<!-- <app-home>hello</app-home>
+<app-login></app-login> -->
+<body>
+   <nav class="navbar bg-dark">
+      <a routerLink="./home/" class="nav-brand text-white nav-link">Home</a>
+      <ul class="nav">
+      <li><a routerLink="./home/" class="nav-link">Home</a></li>
+      <li><a routerLink="./login/" class="nav-link">Login</a></li>
+      <li><a routerLink="./product/" class="nav-link">Products</a></li>
+      <li><a routerLink="./contact/" class="nav-link">Contact</a></li>  
+      </ul>
+      </nav>
+</body>
+<router-outlet></router-outlet> 
