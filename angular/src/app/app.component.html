@@ -1,0 +1,109 @@
+ <html>
+  <head>
+
+  </head>
+  <body>
+    <h1>Welcome to Angular</h1>
+    <hr>
+    <!-- <p>{{name}}</p> -->
+    <p class="bg bg-success text-white p-2"> 
+      <label>Student name :</label> {{name}}<br> 
+     <label>Age :</label> {{age}} <br>
+      <label> IsIndian :</label> {{IsIndian}} <br> 
+      <label>Address :</label>{{address}}
+    </p>
+    {{display()}} <br>
+    add : {{2 + 2}}   <br>
+    <a href="http://google.com">Click here</a>
+    <br>
+    <a href={{url}}>Click here</a> 
+     <!-- interpolation 2nd priority -->
+    <br>
+    <a [href]="url2">Click here</a> 
+    <!-- [href] is used for property binding 1st priority -->
+    <br>
+    <img src={{url3}} width="200" height="200">  <br>
+    <img [src]="url4" width="200" height="200"> <br>
+    <img src="assets/butterflyPNG.png" alt="abc" width="200" height="200"> 
+    <br>
+    <input type="text" id="t1">
+    <input type="text" id="t2">
+    <input type="button" (click)="Addnums()" value="Add">
+    {{result}} <br> 
+    <br>
+    <h2 style="background-color: crimson; text-align: center;"><b>SIMPLE INTEREST</b></h2>
+    <input type="number" id="t3" placeholder="Enter Priniciple Amount">
+    <input type="number" id="t4" placeholder="Enter Rate">
+    <input type="number" id="t5" placeholder="Enter Time">
+    <input type="button" (click)= "simpleinterest()" value="SI">
+    {{result1}} <br> 
+    <br>
+    <h3 style="background-color: cornflowerblue; text-align: center;">Registration Page</h3> 
+    <table class="table table-striped">
+      <tr>
+        <td><label>Enter Name </label></td>
+        <td><input type="text" id="t6" ></td>
+      </tr>
+      <tr>
+        <td><label>Enter DOB </label></td>
+        <td><input type="date" placeholder="Enter DOB" id="t7"></td>
+      </tr> 
+      <tr>
+        <td><label>Enter Gender </label></td>
+        <td>
+          <input type="radio" name="gender" value="male">Male
+          <input type="radio" name="gender" value="Female">Female
+        </td>
+      </tr>
+      <tr>
+        <td><label>Enter Email</label></td>
+        <td><input type="email" placeholder="Enter Email" id="t9"></td>
+      </tr>
+      <tr>
+        <td><label >Nationality</label></td>
+        <select id="t10">
+          <option>INDIA</option>
+          <option>US</option>
+          <option>UK</option>
+        </select>
+      </tr>
+      <input type="button" value="Register" (click)="register()" class="btn btn-primary form-control fw-bold">
+    </table> 
+    <div [innerHTML]="rp"></div> 
+    <br>
+    <h4>DROP DOWN IMAGES</h4>
+    <select> 
+      <option>--Select an Image --</option>
+      <option>a.png</option>
+      <option>b.png</option>
+      <option>c.png</option>
+    </select> 
+    <br><br>
+    <h2 style="text-align: center;">DAY_2</h2>
+    <style>
+      .first
+      {
+        color: red;
+        background-color: steelblue;
+      }
+      .second{
+        border: 3px solid blue;
+      }
+    </style>
+    <!-- Static binding -->
+    <div class="first">Angular Rockss!!!!!</div>
+    <!-- dynamic binding : The values are retrieve from .ts file-->
+    <div [class]="mycls">Angular Rockss!!!!!</div>
+    <!-- conditional class -->
+     <div [class.first]="b">angular rocks!!</div>
+     <div [class.first]="b1">angular rocks!!</div>  
+     
+     <!-- multiple classes-->                               
+      <div [class]="myclassfunc()">HOLAA!</div>
+
+      <!-- simple style -->
+       <div style="background-color: orange;">Good Morning!!</div> 
+       <div [style]="s">Good Morning!!</div>
+       <div [style]="stylefunc()">hii!!!</div>
+  </body>
+ </html>
