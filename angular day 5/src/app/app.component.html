@@ -1,0 +1,27 @@
+<!-- router outlet acts as a placeholder to display the component based on the current url--> 
+ <!-- localhost:4200/home -->
+<!-- <app-home>hello</app-home>
+<app-login></app-login> -->
+<body>
+   <nav class="navbar bg-dark">
+      <a routerLink="./home/" class="nav-brand text-white nav-link">Home</a>
+      <ul class="nav">
+      <li><a routerLink="./home/" class="nav-link">Home</a></li>
+      <li><a routerLink="./login/" class="nav-link">Login</a></li>
+      <li><a routerLink="./product/" class="nav-link">Products</a></li>
+      <li><a routerLink="./contact/" class="nav-link">Contact</a></li> 
+      <li><a routerLink="./parent" class="nav-link">Parent</a></li>  
+      <li><a routerLink="./lifecycle" class="nav-link">LifeCycle</a></li> 
+   
+      </ul>
+      </nav>
+      <hr>
+      <!-- <router-outlet></router-outlet>  -->
+      <!-- <h1>Shared Counter Example</h1> -->
+      <!-- <app-login></app-login> -->
+      <!-- <h1>{{greeting}}</h1> -->
+      <!-- <app-login></app-login>  -->
+       <!-- <app-contact></app-contact> -->
+       <router-outlet></router-outlet>
+      <!-- <app-lifecycle></app-lifecycle> -->
+</body>

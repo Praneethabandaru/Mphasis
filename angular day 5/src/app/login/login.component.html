@@ -1,0 +1,112 @@
+<p>login works!</p>
+<h2>Component A</h2>
+<p>Count: {{ count }}</p>
+<button (click)="increment()">Increment</button>
+<hr><br>
+<h1><b>Template Driven Forms</b></h1>
+<html>
+    <body>
+        <style>
+            .v{
+                border: 3px solid green;
+
+            }
+            .i{
+                border: 3px solid red;
+            }
+        </style>
+        <div style="width: 500px;margin-left: 300px;">
+            <form #f="ngForm" (ngSubmit)="validate(f.value)">
+                {{f.value |json}} 
+                <label>Enter UserName</label>
+                <input type="text" required pattern="[a-z]+" ngModel #uname="ngModel" name="uname" class="form-control" [class.v]="uname.valid && uname.touched" [class.i]="uname.invalid && uname.touched" > 
+                <div style="background-color: yellow;color: red;">
+                    <div *ngIf="uname.errors?.['required'] && uname.touched">
+                        Enter UNAME
+                    </div>
+                    <div *ngIf="uname.errors?.['pattern'] && uname.touched">
+                        invalid pattern enter only alphabets
+                    </div>
+                </div>
+                <!-- {{uname.value}} -->
+
+                <label for="">touched:</label>{{uname.touched}} <br>
+                <label for="">untouched:</label>{{uname.untouched}} <br>
+                <label for="">dirty:</label>{{uname.dirty}} <br>
+                <label for="">prestine:</label>{{uname.pristine}}  <br> 
+                <label for="">valid:</label>{{uname.valid}} <br>
+                <label for="">invalid:</label>{{uname.invalid}}  <br>
+                <br>
+
+                <label>Enter Password</label>
+                <input type="password" name="pwd" required pattern="[a-z0-9]+" class="form-control">
+                <br>
+
+                <button type="submit" class="btn btn-success">Login</button>
+            </form>
+        </div>
+        <h1>Assignment </h1>
+        <hr>
+        <div style="width: 500px;">
+            <form #f1="ngForm" (ngSubmit)="display(f1.value)">
+                <h1><b><em><mark>Basic Student Details</mark></em></b></h1>
+
+                <label>Name:</label>
+                <input type="text" name="sname" id="t1" ngModel #sname="ngModel" required pattern="[a-zA-z]+" [class.v]="sname.valid && sname.touched" [class.i]="sname.invalid && sname.touched" class="form-control">
+                <div style="background-color: yellow;color: red;">
+                    <div *ngIf="sname.errors?.['required'] && sname.touched">
+                        Enter UNAME
+                    </div>
+                    <div *ngIf="sname.errors?.['pattern'] && sname.touched">
+                        Invalid pattern enter only alphabets
+                    </div>
+                </div>
+                <br>
+
+                <label>Email:
+                <input type="email" name="email" id="t2" ngModel #email="ngModel" required pattern="[a-zA-z0-9]+"  [class.v]="email.valid && email.touched" [class.i]="email.invalid && email.touched" class="form-control"> 
+                
+                </label>
+                <br>
+                <div style="background-color: yellow;color: red;">
+                    <div *ngIf="email.errors?.['required'] && email.touched">
+                        Enter Email
+                    </div>
+                    <div *ngIf="email.errors?.['pattern'] && email.touched">
+                        Invalid pattern!!!!!!!!!
+                    </div>
+                </div>
+
+                <label>Message:</label>
+                <textarea name="textarea" id="t3" ngModel #textarea="ngModel" required [class.v]="textarea.valid && textarea.touched" [class.i]="textarea.invalid && textarea.touched" class="form-control" required>
+                </textarea>
+                <div style="background-color: yellow;color: red;">
+                    <div *ngIf="textarea.errors?.['required'] && textarea.touched">
+                        Enter Message
+                    </div>
+                </div>
+                <br>
+
+                <label>Experience:</label>
+                <input type="checkbox" [(ngModel)]="MyExperience" name="exp"><br>
+                <div *ngIf="MyExperience">
+                <label>Years of Experience:</label>
+                <input type="number" name="experienceYears" ngModel #experienceYears="ngModel" required 
+                   class="form-control">
+                <div style="background-color: yellow; color: red;">
+                    <div *ngIf="experienceYears.errors?.['required'] && experienceYears.touched">
+                    Enter Years of Experience
+                    </div>
+                </div>
+                </div>
+
+                <button type="submit" [disabled]="f1.invalid" >Submit</button>
+                <button type="button" (click)="f1.resetForm()">Reset</button><br>
+                <br>
+                <br>
+                {{f1.value |json}}
+            </form>
+        </div>
+    </body>
+</html>
+
