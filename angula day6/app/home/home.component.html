@@ -1,0 +1,63 @@
+<p>home works!</p>
+<h2>Adding and removing css by using radio buttons</h2>
+<label>Add Css</label>
+<input type="radio" name="addcss" value="addcss"><br>
+<label>Remove Css</label>
+<input type="radio" name="addcss" value="removecss"><br>
+<input type="button" value="Apply" (click)="applyCss()"><br>
+<div [ngStyle]="cssStyles">HELLO INDIA</div>
+<hr>
+<h2>Adding and removing css by using checkbox</h2>
+
+<div [style.font-weight]="isBoldChecked ? 'bold' : 'normal'"
+     [style.font-style]="isItalicChecked ? 'italic' : 'normal'"
+     [style.Background-color]="iscolorChecked ? 'yellow' : 'transparent'"
+     [style.color]="isTextColorChecked ? 'blue' : 'black'"
+     [style.border]="isBorderColorChecked ? '2px solid red' : 'none'"
+     [style.text-decoration]="isUnderlineChecked ? 'underline' : 'none'">
+  HELLO ANGULAR
+</div>
+
+<label> <input type="checkbox" (change)="toggleStyle($event, 'bold')"> Bold</label>
+<br>
+<label><input type="checkbox" (change)="toggleStyle($event, 'italic')"> Italic</label>
+<br>
+<label><input type="checkbox" (change)="toggleStyle($event, 'background-color')"> Backgroundcolor</label>
+<br>
+<label><input type="checkbox" (change)="toggleStyle($event, 'textColor')"> Text Color</label>
+<br>
+<label><input type="checkbox" (change)="toggleStyle($event, 'underline')"> Underline</label>
+<br>
+<label><input type="checkbox" (change)="toggleStyle($event, 'borderColor')"> Border Color</label>
+
+<hr>
+
+{{result}}
+<button (click)="add()">calculate</button><br><br>
+<!-- <button (click)="dividenums()">div</button><br><br> -->
+
+<!-- <button (click)="array()">array</button> -->
+ <h1>{{heading}}</h1>
+ {{a}}
+ {{b}}
+ <div [style]="bg">
+  page content goes here!
+ </div>
+<hr> 
+
+<h1><b>Pipes</b></h1>
+<body>
+    {{'good morning'|uppercase}} <br>
+    {{'good MorNing'|lowercase}} <br>
+    {{211345|number}} <br>
+    {{'1-1-2000'|date:'longDate'}} <hr>
+</body> 
+<p>{{product.name | uppercase}}</p>
+<p>{{product.price | currency:'INR'}}</p>
+<p>{{product.releaseDate | date:'longDate'}}</p>
+<hr>
+<div>{{'Angular' | rev}}</div>
+<hr>
+<hr>
+<h3>Word Count</h3>
+<p>{{'Angular is awesome!'| wordcount}}</p>

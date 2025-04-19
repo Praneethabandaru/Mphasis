@@ -1,0 +1,24 @@
+<p>buy works!</p>
+
+<img src="./assets/b.jpg" alt="">
+<br>
+<label>PID:</label> 
+{{pid}} <br>
+
+<label for="">PNAME:</label> 
+{{pname |uppercase}} <br>
+
+<label for="">PRICE:</label>
+{{price | currency:'INR'}} <br>
+
+<label for="">DESCRIPTION:</label>
+{{description}} <br> 
+
+{{pimage}}
+
+<input type="number" placeholder="enter quantity" [(ngModel)]="q" class="form-control"><br>
+<button class="btn btn-primary">Confirm Buy</button>
+
+<div style="font-size: 50px;">
+    {{q *price}}
+</div>
