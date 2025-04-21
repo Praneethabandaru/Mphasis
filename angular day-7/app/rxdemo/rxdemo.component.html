@@ -1,0 +1,33 @@
+<p>rxdemo works!</p>
+<button (click)="fromdemo()">From Demo</button> <br> 
+<button (click)="intervaldemo()">Interval Demo</button> <br>
+<button (click)="fromEvent()" id="clickBtn">From Event</button> <br>
+<button (click)="observabledemo()">Observable Demo</button>  <br>
+<button (click)="displaystudent()">student</button> <br>
+{{fd}}
+<div *ngFor="let item of stuarray" class="bg bg-info">
+    <div> {{item.id}}</div>
+    <div> {{item.studentname}}</div>
+    <div> {{item.totalmarks}}</div>
+</div>
+<br>
+
+<input type="text" name="txt" ngModel #txt="ngModel" placeholder="Enter ID"/>
+<input type="text" name="data" ngModel #data="ngModel" placeholder="Enter updated data">
+<button (click)="displaystudentbyid(txt.value)">getbyid</button> <br>
+<button (click)="Addnewstudents()">Adding new Students</button> <br>
+<!-- Adding students dynamically -->
+<input type="number" id="studentId">
+<input type="string" id="studentName">
+<input type="number" id="totalMarks">
+<button (click)="AddStudent()">add students dynamically</button><br>
+
+<button (click)="deletestudents(txt.value)">Delete new Students</button> <br>
+
+<button (click)="updatestudents(studentId,{studentname :studentName,totalMarks:studentMarks})">Update Student</button>
+
+<div> {{studentdata.id}}</div>
+<div> {{studentdata.studentname}}</div> 
+<div> {{studentdata.totalmarks}}</div>
+
+<!-- <div>{{error}}</div> -->

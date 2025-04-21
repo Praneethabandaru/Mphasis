@@ -1,0 +1,24 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "studentname": "Bubby",
+      "totalmarks": "800"
+    },
+    {
+      "id": "3",
+      "studentname": "Potti",
+      "totalmarks": "1000"
+    },
+    {
+      "id": "4",
+      "studentname": "Rahul",
+      "totalmarks": "900"
+    },
+    {
+      "id": "5",
+      "studentname": "teja",
+      "totalmarks": "222"
+    }
+  ]
+}

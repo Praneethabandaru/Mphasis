@@ -1,0 +1,42 @@
+<p>lifecycle works!</p>
+<app-childpage message="have a great  day!!!!!!!!!!!!!"></app-childpage>
+<br>
+<input type="text" id="t1"
+(input)="showdata()">
+<button (click)="show()">toggle</button> 
+
+<hr>
+<h1><b>Model Driven Form</b></h1>
+<div style="width: 300px;margin-left: 150px;">
+    <form [formGroup]="f">
+
+        <label>Enter UserName</label>
+        <input type="text" formControlName="uname"  class="form-control">
+        <div class="name" *ngIf="f.controls.uname.errors?.required && f.controls.uname.touched">
+            Please Enter UserName
+        </div>
+
+        <label>Enter email</label>
+        <input type="text" formControlName="email" class="form-control">
+        <div class="name" *ngIf="f.controls.email.errors?.required && f.controls.email.touched">
+            Please Enter Email
+        </div>
+
+        <label>Enter message</label>
+        <textarea formControlName="message" class="form-control"></textarea>
+        <div class="name" *ngIf="f.controls.message.errors?.required && f.controls.message.touched">
+            Please Enter message
+        </div> <br>
+        <div class="name" *ngIf="f.controls.message.errors?.maxlength && f.controls.message.touched">
+            Please Enter message
+        </div> 
+
+        <label>Enter address</label>
+        <input type="text" formControlName="address" class="form-control">
+        <div class="name" *ngIf="f.controls.address.errors?.msg && f.controls.address.touched">
+            Address should starts with A
+        </div>
+        <input type="submit" value="Send" class="btn btn-success"> 
+    </form>
+</div>
+
