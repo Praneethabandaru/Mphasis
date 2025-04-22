@@ -1,0 +1,25 @@
+ <!-- <p>login works!</p> -->
+ <div style="margin-top:100px;width:500px;border:none;box-shadow:none;background:transparent;"  class="d-flex justify-content-center align-items-center">
+    <form [formGroup]="f" style="border:none;box-shadow:none;background:transparent;padding-bottom:0; ">
+
+        <label><b>Enter Username</b></label>
+        <input type="text" formControlName="uname" class="form-control">
+        <div class="name text-danger" *ngIf="f.controls.uname.errors?.required && f.controls.uname.touched">
+            Please Enter Username
+        </div>
+        <div class="name text-danger" *ngIf="f.controls.uname.errors?.pattern && f.controls.uname.touched">
+            Please check pattern
+        </div>
+
+        <label><b>Enter Password</b></label>
+            <input type="password" formControlName="pass" class="form-control">
+            <div class="name text-danger" *ngIf="f.controls.pass.errors?.required && f.controls.pass.touched">
+                Please Enter Password
+            </div>
+            <div class="name text-danger" *ngIf="f.controls.pass.errors?.pattern && f.controls.pass.touched">
+                Please check password
+            </div> 
+
+            <button routerLink="/view" style="border: none;"  class="btn btn-secondary">login</button> 
+    </form>
+ </div>

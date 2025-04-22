@@ -1,0 +1,14 @@
+<!-- <p>order works!</p>  -->
+<div class="ms-5">
+    <h1>Pizza Details</h1>
+    <img src="{{image}}" style="width: 500px;height: 500px;">
+    <div><b>Id: </b>{{id}}</div>
+    <div><b>Toppings: </b>{{toppings}}</div>
+    <div><b>Sauce: </b>{{sauce}}</div>
+    <div><b>Size: </b>{{size}}</div>
+    <div><b>Features: </b>{{features}}</div>
+    <div><b>Price: </b>{{price | currency:'INR'}}</div> 
+    <input type="number" [(ngModel)]="q"  placeholder="enter quantity" class="btn btn-info  mb-2 form-control" style="width: 250px;"> 
+    <br>
+    <div class="btn btn-info  mb-2 form-control" style="width: 250px;">Total Price:{{q*price | currency:'INR'}}</div>
+</div>

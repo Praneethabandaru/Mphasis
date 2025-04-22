@@ -1,0 +1,14 @@
+<!-- <p>view works!</p> -->
+<div class="row">
+    <div class="col-md-4" *ngFor = "let i of pizzaarray">
+        <div class="ms-5"><img src={{i.image}} style="height: 300px; width:300px;margin-top:20px;"></div>
+        <div class="ms-5"><b>Id: </b>{{i.id}}</div>
+        <div class="ms-5"><b>Toppings: </b>{{i.toppings}}</div>
+        <div class="ms-5"><b>Sauce: </b>{{i.sauce}}</div>
+        <div class="ms-5"><b>Size: </b>{{i.size}}</div>
+        <div class="ms-5"><b>Features: </b>{{i.features}}</div>
+        <div class="ms-5"><b>Price: </b>{{i.price}}</div>
+        <button routerLink="/order" [queryParams]= "{a:i.id,b:i.toppings,c:i.sauce,d:i.size,e:i.features,f:i.image,g:i.price}" class="btn btn-info form-control ms-5 mb-2" style="width: 250px;">Order Now</button> <br>
+        <button class="btn btn-info form-control ms-5 mb-2" style="width: 250px;">Add to Cart</button>
+    </div>
+</div> 
