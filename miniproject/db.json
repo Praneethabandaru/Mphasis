@@ -1,0 +1,60 @@
+{
+  "pizzas": [
+    {
+      "id": 1,
+      "toppings": "Cheese, Tomato",
+      "sauce": "Tomato Basil",
+      "size": "Medium",
+      "features": "Classic Italian",
+      "price": 450,
+      "image": "https://c1.staticflickr.com/9/8214/8273689641_81acbf8c14_b.jpg"
+    },
+    {
+      "id": 2,
+      "toppings": "capsicum,Mushroom",
+      "sauce": "Tomato Basil",
+      "size": "Medium",
+      "features": "Classic Cuisine",
+      "price": 550,
+      "image": "https://cdn.tasteatlas.com/images/dishes/6b28b438a3b64a7e9fca9081c89f07ff.jpg?mw=1300"
+    },
+    {
+      "id": 3,
+      "toppings": "Cheese, Corn",
+      "sauce": "Tomato Basil",
+      "size": "Large",
+      "features": "Classic Cuisine",
+      "price": 430,
+      "image": "https://i.ytimg.com/vi/gUlsgxzY9GU/maxresdefault.jpg"
+    },
+    {
+      "id": 4,
+      "toppings": "Corn",
+      "sauce": "Tomato Basil",
+      "size": "Large",
+      "features": "Classic Italian",
+      "price": 550,
+      "image": "https://tse1.mm.bing.net/th/id/OIP.M8f_HhWX-6BPl9SFRtpy4QHaHa?rs=1&pid=ImgDetMain"
+    },
+    {
+      "id": 5,
+      "toppings": "Tomato",
+      "sauce": "Tomato Basil",
+      "size": "Large",
+      "features": "Classic Italian",
+      "price": 600,
+      "image": "https://product-assets.faasos.io/production/product/image_1661339785603_Double_Paneer_Supreme_Medium_.jpg"
+    },
+    {
+      "id": 6,
+      "toppings": "Tomato",
+      "sauce": "Tomato Basil",
+      "size": "Large",
+      "features": "Classic Italian",
+      "price": 500,
+      "image": "https://tse3.mm.bing.net/th/id/OIP.0ZKa_70Zv4zWQhPBzyP7MAHaHa?rs=1&pid=ImgDetMain"
+    }
+  ],
+  "registrations": [],
+  "cart": []
+}
