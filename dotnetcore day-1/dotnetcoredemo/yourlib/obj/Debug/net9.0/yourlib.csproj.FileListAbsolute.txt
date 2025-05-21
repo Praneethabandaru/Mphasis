@@ -1,0 +1,11 @@
+C:\dotnetcoredemo\yourlib\bin\Debug\net9.0\yourlib.deps.json
+C:\dotnetcoredemo\yourlib\bin\Debug\net9.0\yourlib.dll
+C:\dotnetcoredemo\yourlib\bin\Debug\net9.0\yourlib.pdb
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\yourlib.GeneratedMSBuildEditorConfig.editorconfig
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\yourlib.AssemblyInfoInputs.cache
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\yourlib.AssemblyInfo.cs
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\yourlib.csproj.CoreCompileInputs.cache
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\yourlib.dll
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\refint\yourlib.dll
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\yourlib.pdb
+C:\dotnetcoredemo\yourlib\obj\Debug\net9.0\ref\yourlib.dll
